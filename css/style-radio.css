@@ -76,6 +76,8 @@ nav span{
     	background-color: #3b2e65;
     }
 
+    
+
 
 nav ul{
     display: block;
@@ -114,131 +116,130 @@ nav ul{
 
 /*----------main----------*/
 
+.radio{
+	display: flex;
+	width: 42%;
+	margin: 40px auto 0;
+}
 
-#LogoSharts-page{
-	display: block;
-	width: 30%;
-	margin: 80px auto 20px;
+#mic{
+	float: left;
+	margin-top: 5px;
+	width: 40px;
+	height: 40px;
 }
 
 h1{
-	font-size: 1.4rem;
+	font-size: 3rem;
+	color: #684eb7;
+}
+
+#subtitulo{
 	text-align: center;
-	font-weight: 600;
-	margin-bottom: 50px;
+	font-size: 1.3rem;
 }
 
-/*----------formulario----------*/
-
-form{
-	margin: 0 5vw;
-}
-
-form input{
+#bkg-radio{
 	display: block;
-	background-color: #e0d5ff;
-	font-size: 1.2rem;
-	padding: 0 5vw;
-	margin: 15px 0;
-	border-radius: 10px;
-	width: 80vw;
-	height: 50px;
-	color: #2b2b2b;
-	outline: 0;
+	width: 320px;
+	height: 320px;
+	margin: 18px auto;
+	box-shadow: 5px 10px 0px #8468d9;
+	border-radius: 50px;
 }
 
-form input::placeholder{
-	font-size: 1.2rem;
+#titulo-musica{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 800;
 }
 
-label{
-	font-size: 1.1rem;
+audio{
+	display: block;
+	width: 320px;
+	height: 60px;
+	margin: 18px auto;
+	border-radius: 50px;
 }
 
-.termos-e-condicoes{
+
+/*---Radios dos artistas---*/
+
+h3{
+	font-size: 1.3rem;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.radioarts{
+	margin: 15px 5vw;
+	width: 90vw;
+	height: 230px;
+	overflow: hidden;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+.radioarts::-webkit-scrollbar{
+	display: none;
+}
+
+.radioperfil{
 	display: flex;
-	font-size: 0.95rem;
-	top: 570px;
 	width: 90vw;
-	height: 30px;
-	margin: 25px auto;
+	height: 60px;
+	margin-bottom: 15px;
+	margin-left: 5vw;
 }
 
-.termos-e-condicoes p{
-	margin-left: 10px;
-	margin-top: 5px;
-	color: #363636;
+.radioperfil h3{
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-top: 20px;
 }
 
-.termos-e-condicoes a{
-	margin-top: 5px;
-	color: #8468d9;
-}
-
-#termos-check{
-	margin-top: -3.1%;
-	width: 20px;
-	border-radius: 10px;
+.radioperfil button{
+	font-size: 1.2rem;
 	border: 3px solid #8468d9;
-	background-color: #8468d9;
-}
-
-form button{
-	width: 90vw;
-	font-size: 1.1rem;
-	background-color: #8468d9;
-	border-radius: 10px;
-	padding: 10px 50px;
-	color: white;
-}
-
-#esqueci-senha{
-	float: left;
-	font-size: 1.1rem;
+	background-color: initial;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-top: 9px;
+	padding: 12.5px 10px;
 	color: #8468d9;
-}
-
-#ou{
-	font-size: 1.2rem;
-	color: #363636;
-	margin-top: 50px;
-	text-align: center;
-}
-
-
-/*----------Login alternativo----------*/
-
-.login-alternativo{
-	text-align: center;
-	margin-bottom: 70px;
-}
-
-.login-alternativo button{
-	font-size: 1.2rem;
-	padding: 0 5vw 0 5vw;
-	margin: 15px 0;
-	border: 2px solid black;
-	border-radius: 10px;
-	width: 80vw;
-	height: 50px;
-	outline: 0;
-}
-
-.not-cadastro button{
-	border: 0;
-	background-color: #c9b8fd;
-}
-
-.not-cadastro a{
-	color: black;
+	transition: 0.5s;
 	text-decoration: none;
+	cursor: pointer;
 }
 
-.login-alternativo img{
-	position: absolute;
-	margin: 27px 0 0 18px;
-	width: 25px;
-	height: 25px;
+.radioperfil button:hover{
+	background-color: #e3daff;
+}
+
+/*-----*/
+
+.a-radios{
+	display: flex;
+}
+
+.a-radios figure{
+	display: flex;
+}
+
+.a-radios figcaption{
+	margin-top: 160px;
+	font-size: 1.2rem;
+	width: 84px;
+	margin-left: -120px;
+}
+
+.a-radios img{
+	margin-left: 60px;
+	border-radius: 30px;
+	width: 35vw; 
+	height: 35vw;
+	scroll-snap-align: start;
 }
 
 
@@ -293,7 +294,6 @@ footer a{
 	margin: 0 10px;
 	width: 40px;
 }
-
 
 
 

@@ -143,7 +143,6 @@ form input{
 	border-radius: 10px;
 	width: 80vw;
 	height: 50px;
-	color: #2b2b2b;
 	outline: 0;
 }
 
@@ -151,57 +150,25 @@ form input::placeholder{
 	font-size: 1.2rem;
 }
 
-label{
-	font-size: 1.1rem;
-}
-
-.termos-e-condicoes{
-	display: flex;
-	font-size: 0.95rem;
-	top: 570px;
-	width: 90vw;
-	height: 30px;
-	margin: 25px auto;
-}
-
-.termos-e-condicoes p{
-	margin-left: 10px;
-	margin-top: 5px;
-	color: #363636;
-}
-
-.termos-e-condicoes a{
-	margin-top: 5px;
-	color: #8468d9;
-}
-
-#termos-check{
-	margin-top: -3.1%;
-	width: 20px;
-	border-radius: 10px;
-	border: 3px solid #8468d9;
-	background-color: #8468d9;
-}
-
 form button{
-	width: 90vw;
+	float: right;
 	font-size: 1.1rem;
 	background-color: #8468d9;
-	border-radius: 10px;
-	padding: 10px 50px;
+	border-radius: 30px;
+	padding: 10px 40px;
 	color: white;
 }
 
-#esqueci-senha{
+form a{
 	float: left;
 	font-size: 1.1rem;
 	color: #8468d9;
 }
 
-#ou{
+p{
 	font-size: 1.2rem;
 	color: #363636;
-	margin-top: 50px;
+	margin-top: 90px;
 	text-align: center;
 }
 
@@ -215,7 +182,7 @@ form button{
 
 .login-alternativo button{
 	font-size: 1.2rem;
-	padding: 0 5vw 0 5vw;
+	padding: 0 5vw;
 	margin: 15px 0;
 	border: 2px solid black;
 	border-radius: 10px;
@@ -236,7 +203,7 @@ form button{
 
 .login-alternativo img{
 	position: absolute;
-	margin: 27px 0 0 18px;
+	margin: 28px 0 0 25px;
 	width: 25px;
 	height: 25px;
 }

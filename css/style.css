@@ -49,11 +49,11 @@ nav span{
 }
 
 .menu input {
-    width: 55px;
-    height: 50px;
+    width: 11vw;
+    height: 11vw;
     position: absolute;
-    top: 20px;
-    left: 24px;
+    top: 5vw;
+    left: 5.5vw;
     cursor: pointer;
     opacity: 0;
     grid-column-start: 2;
@@ -65,10 +65,16 @@ nav span{
         z-index: 1;
     }
 
-    .menu input:checked~.menu-hamb span {
+    .menu input:checked~.menu-hamb{
+    	position: absolute;
+    	margin-left: 4.3vw;
+		margin-top: 4vw;
         z-index: 3;
     }
 
+    .menu input:checked~.menu-hamb span{
+    	background-color: #3b2e65;
+    }
 
 nav ul{
     display: block;
@@ -76,7 +82,7 @@ nav ul{
     left: 0px;
     top: 0px;
     width: 198px;
-    height: 160px;
+    height: 210px;
     background-color: #5c43a7;
     border: none;
     border-bottom-right-radius: 30px;
@@ -598,7 +604,7 @@ iframe{
 
 footer{
 	background-color: #424242;
-	height: 350px;
+	height: 450px;
 }
 
 .blocofooter{
@@ -636,7 +642,7 @@ footer a{
 .redes-sociais-contato{
 	display: flex;
 	float: right;
-	margin-top: -258px;
+	margin-top: -255px;
 }
 
 .redes-sociais-contato img{

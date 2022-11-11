@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sharts - Login</title>
         <link rel="shortcut icon" href="icons/logoresponsivaA.svg">
-        <link rel="stylesheet" href="css/style-cad.css">
+        <link rel="stylesheet" href="css/style-login.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
@@ -16,7 +16,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&display=swap" rel="stylesheet">
-        </script>
     </head>
     <body>
         <header>
@@ -52,25 +51,15 @@
 
             	<input type="email" name="email" placeholder="E-mail">
 
-                <input type="email" name="email" placeholder="Confirme seu e-mail">
-
-            	<input type="password" name="senha" placeholder="Crie uma senha">
-
-                <input type="text" name="user" placeholder="Crie um nome de usuário @">
-
-                <label for="data-n">Data de Nascimento</label>
-                <input type="date" name="data-n">
-
-                 <div class="termos-e-condicoes">
-                    <input type="checkbox" name="termos-check" id="termos-check">
-                    <p>Concordo com os <a href="#">Termos e Condições</a> do Sharts</p>
-                </div>
+            	<input type="password" name="email" placeholder="Senha">
 
             	<button type="submit">Entrar</button>
 
+            	<a href="#">Esqueceu a senha?</a>
+
             </form>
 
-            <p id="ou">ou</p>
+            <p>ou</p>
 
             <section class="login-alternativo">
 
@@ -84,10 +73,14 @@
             	<button>Continue com o Google</button>
             </div>
 
+            <div class="not-cadastro">
+                <img src="icons/profile.svg" id="google-login">
+                <button><a href="cadastro.html">Não possuo Cadastro</button></a>
+            </div>
+
         	</section>
 
         </main>
-
 
         <footer>
 
@@ -120,7 +113,7 @@
 
         </footer>
 
-        <script src="js/script.js"></script>
 
+        <script src="js/script.js"></script>
     </body>
     </html>
