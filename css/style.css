@@ -18,7 +18,7 @@ header{
 nav span{
     display: table;
     background-color: black;
-    padding: 5px 25px;
+    padding: 1vw 5vw;
     margin: 6px;
     border-radius: 2px;
     grid-column-start: 2;
@@ -27,14 +27,14 @@ nav span{
 
 .menu-hamb{
 	margin-left: 4.3vw;
-	margin-top: 25px;
+	margin-top: 5.5vw;
 	grid-column-start: 2;
 	grid-column-end: 2;
 	z-index: 2;
 }
 
 #LogoSharts{
-	margin-top: 15px;
+	margin-top: 13%;
 	margin-bottom: 15px;
 	grid-column-start: 4;
 	grid-column-end: 4;	
@@ -42,7 +42,7 @@ nav span{
 
 #IconePerfil{
 	transform: scale(95%);
-	margin-top: 18px;
+	margin-top: 4.9vw;
 	margin-left: 16px;
 	grid-column-start: 6;
 	grid-column-end: 6;
@@ -119,7 +119,6 @@ nav ul{
 	height: 40px;
 	border-radius: 30px;
 	background-color: #dddddd;
-	box-shadow: 5px 5px 10px rgb(0 0 0 / 35%);
 	text-align: center;
 	padding: 0 5vw;
 	font-size: 1.3rem;
@@ -289,8 +288,8 @@ nav ul{
 
 .perfis figcaption{
 	width: 60px;
-	margin-top: 85px;
-	margin-left: -84px;
+	margin-top: 80px;
+	margin-left: -79px;
 }
 
 .perfis figcaption a{
@@ -309,6 +308,13 @@ nav ul{
 
 /*---Postagens---*/
 
+h1{ 
+	font-size: 2.5rem;
+	margin: 10vw 5vw 5vw;
+	border-bottom: 10px solid #8468d9;
+	width: 220px;
+}
+
 .userpost{
 	display: flex;
 	margin: 0 5vw;
@@ -321,12 +327,25 @@ nav ul{
 	border-radius: 50px;
 }
 
-.userpost p{
+.titulopost{
+	display: flex;
 	margin-top: 50px;
-	width: 250px;
 	margin-left: 10px;
-	font-size: 1.2rem;
+	font-size: 0.9rem;
+	height: 25px;
 }
+
+.titulopost span{
+	margin: 0 5px;
+}
+
+.titulopost a{
+	text-decoration: none;
+	font-weight: 600;
+	color: #8468d9;
+}
+
+/*-----*/
 
 iframe{
 	position: absolute;
@@ -335,10 +354,19 @@ iframe{
 	box-shadow: 5px 10px 0px #8468d9;
 }
 
+.post-functions{
+	margin-left: 14.5px;
+	margin-top: 362px;
+	display: flex;
+}
+
+.post-functions img{
+	margin: 0 7px;
+}
+
 #like{
 	width: 40px;
 	height: 40px;
-	margin-top: 368px;
 	z-index: 1;
 }
 
@@ -346,8 +374,7 @@ iframe{
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	margin-top: 368px;
-	margin-left: -10%;
+	margin-left: -11.5%;
 	transition: 0.2s;
 	opacity: 0;
 	z-index: 2;
@@ -355,9 +382,9 @@ iframe{
 
 #ip-curtir{
 	position: absolute;
+	margin-left: 1.3%;
 	width: 40px;
 	height: 40px;
-	margin-top: 368px;
 	opacity: 0;
 	z-index: 3;
 }
@@ -369,15 +396,11 @@ iframe{
 #msg{
 	width: 42px;
 	height: 42px;
-	margin-top: 370px;
-	margin-left: 4%;
 }
 
 #share{
 	width: 41px;
 	height: 41px;
-	margin-top: 368px;
-	margin-left: 4%;
 }
 
 
@@ -409,7 +432,7 @@ iframe{
 	margin-left: 10px;
 }
 
-.audioperfil a:nth-child(3){
+.audioperfil button{
 	font-size: 1.2rem;
 	border: 3px solid #8468d9;
 	border-radius: 20px;
@@ -417,7 +440,12 @@ iframe{
 	margin-top: 9px;
 	padding: 12.5px 10px;
 	color: #8468d9;
+	transition: 0.5s;
 	text-decoration: none;
+}
+
+.audioperfil button:hover{
+	background-color: #e3daff;
 }
 
 
@@ -443,8 +471,8 @@ iframe{
 }
 
 .audio audio{
-	width: 57.5%;
-	margin-left: 3.3%;
+	width: 58%;
+	margin-left: 6.5%;
 	margin-top: 10%;
 }
 
@@ -513,6 +541,7 @@ iframe{
 	width: 90vw;
 	height: 60px;
 	margin-bottom: 15px;
+	margin-left: 5vw;
 }
 
 .radioperfil h3{
@@ -521,7 +550,7 @@ iframe{
 	margin-top: 20px;
 }
 
-.radioperfil button:nth-child(2){
+.radioperfil button{
 	font-size: 1.2rem;
 	border: 3px solid #8468d9;
 	background-color: initial;
@@ -535,7 +564,7 @@ iframe{
 	cursor: pointer;
 }
 
-.radioperfil button:nth-child(2):hover{
+.radioperfil button:hover{
 	background-color: #e3daff;
 }
 
