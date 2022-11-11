@@ -323,6 +323,7 @@ h1{
 
 .userpost{
 	display: flex;
+	width: 90vw;
 	margin: 0 5vw;
 }
 
@@ -354,20 +355,26 @@ h1{
 /*-----*/
 
 iframe{
-	position: absolute;
-	margin-top: 110px;
+	display: block;
+	margin: 110px 0 0 -43vw;
 	border-radius: 30px;
 	box-shadow: 5px 10px 0px #8468d9;
+	width: 100%;
+	height: 230px;
 }
 
+/*-----*/
+
 .post-functions{
-	margin-left: 14.5px;
 	margin-top: 362px;
+	margin-left: -165px;
 	display: flex;
+	float: left;
 }
 
 .post-functions img{
 	margin: 0 7px;
+	opacity: .9;
 }
 
 #like{
@@ -380,7 +387,7 @@ iframe{
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	margin-left: -11.5%;
+	margin-left: -10%;
 	transition: 0.2s;
 	opacity: 0;
 	z-index: 2;
@@ -388,7 +395,7 @@ iframe{
 
 #ip-curtir{
 	position: absolute;
-	margin-left: 1.3%;
+	margin-left: 1.5%;
 	width: 40px;
 	height: 40px;
 	opacity: 0;

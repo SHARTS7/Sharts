@@ -147,6 +147,11 @@ form input{
 	outline: 0;
 }
 
+form input[type="date"]{
+	display: block;
+	padding: auto 0;
+}
+
 form input::placeholder{
 	font-size: 1.2rem;
 }
@@ -215,7 +220,7 @@ form button{
 
 .login-alternativo button{
 	font-size: 1.2rem;
-	padding: 0 5vw 0 5vw;
+	padding: 0 4vw;
 	margin: 15px 0;
 	border: 2px solid black;
 	border-radius: 10px;
@@ -224,22 +229,23 @@ form button{
 	outline: 0;
 }
 
-.not-cadastro button{
+.fzr-login button{
 	border: 0;
 	background-color: #c9b8fd;
 }
 
-.not-cadastro a{
+.fzr-login a{
 	color: black;
 	text-decoration: none;
 }
 
 .login-alternativo img{
 	position: absolute;
-	margin: 27px 0 0 18px;
+	margin: 28px 0 0 20px;
 	width: 25px;
 	height: 25px;
 }
+
 
 
 /*---Rodapé---*/
