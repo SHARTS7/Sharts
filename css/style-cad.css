@@ -153,6 +153,7 @@ form input[type="date"]{
 }
 
 form input::placeholder{
+	margin-top: 10px;
 	font-size: 1.2rem;
 }
 
