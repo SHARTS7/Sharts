@@ -2,22 +2,22 @@
     margin: 0;
     padding: 0;
 	border: 0;
-	font-family: 'Archivo', sans-serif;
+	font-family: 'Space Grotesk', sans-serif;
 }
 
 @media only screen and (max-width: 480px) {
 
 header{
 	display: grid;
-	background-color: #8468d9;
+	background-color: #202020;
 	width: 100%;
-	height: 91.34;
+	height: 77px;
 	grid-template-columns: 5vw 15vw 15vw 30vw 15vw 15vw 5vw;
 }
 
 nav span{
     display: table;
-    background-color: black;
+    background-color: white;
     padding: 1vw 5vw;
     margin: 6px;
     border-radius: 2px;
@@ -27,22 +27,21 @@ nav span{
 
 .menu-hamb{
 	margin-left: 4.3vw;
-	margin-top: 5.5vw;
+	margin-top: 4.3vw;
 	grid-column-start: 2;
 	grid-column-end: 2;
 	z-index: 2;
 }
 
 #LogoSharts{
-	margin-top: 13%;
-	margin-bottom: 15px;
+	margin-top: 7%;
 	grid-column-start: 4;
 	grid-column-end: 4;	
 }
 
 #IconePerfil{
 	transform: scale(95%);
-	margin-top: 4.9vw;
+	margin-top: 3.2vw;
 	margin-left: 16px;
 	grid-column-start: 6;
 	grid-column-end: 6;
@@ -52,7 +51,7 @@ nav span{
     width: 11vw;
     height: 11vw;
     position: absolute;
-    top: 5vw;
+    top: 3.2vw;
     left: 5.5vw;
     cursor: pointer;
     opacity: 0;
@@ -68,12 +67,12 @@ nav span{
     .menu input:checked~.menu-hamb{
     	position: absolute;
     	margin-left: 4.3vw;
-		margin-top: 4vw;
+		margin-top: 2.8vw;
         z-index: 3;
     }
 
     .menu input:checked~.menu-hamb span{
-    	background-color: #3b2e65;
+    	background-color: #202020;
     }
 
 nav ul{
@@ -83,7 +82,7 @@ nav ul{
     top: 0px;
     width: 198px;
     height: 210px;
-    background-color: #5c43a7;
+    background-color: #f7334e;
     border: none;
     border-bottom-right-radius: 30px;
     transform: translate(-110%, 0);
@@ -97,7 +96,7 @@ nav ul{
     text-decoration: none;
     color: black;
     padding: 10px 30px;
-    background-color: #876bdb;
+    background-color: white;
     font-size: 1.1em;
     border-radius: 20px;
 }
@@ -233,7 +232,7 @@ nav ul{
 }
 
 .autonav div{
-	border: 2px solid #8468d9;
+	border: 2px solid #f7334e;
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -317,7 +316,7 @@ nav ul{
 h1{ 
 	font-size: 2.5rem;
 	margin: 10vw 5vw 5vw;
-	border-bottom: 10px solid #8468d9;
+	border-bottom: 10px solid #f7334e;
 	width: 220px;
 }
 
@@ -349,7 +348,7 @@ h1{
 .titulopost a{
 	text-decoration: none;
 	font-weight: 600;
-	color: #8468d9;
+	color: #f7334e;
 }
 
 /*-----*/
@@ -358,7 +357,7 @@ iframe{
 	display: block;
 	margin: 110px 0 0 -43vw;
 	border-radius: 30px;
-	box-shadow: 5px 10px 0px #8468d9;
+	box-shadow: 5px 10px 0px #f7334e;
 	width: 100%;
 	height: 230px;
 }
@@ -447,18 +446,18 @@ iframe{
 
 .audioperfil button{
 	font-size: 1.2rem;
-	border: 3px solid #8468d9;
+	border: 3px solid #f7334e;
 	border-radius: 20px;
 	margin-left: 10px;
 	margin-top: 9px;
 	padding: 12.5px 10px;
-	color: #8468d9;
+	color: #f7334e;
 	transition: 0.5s;
 	text-decoration: none;
 }
 
 .audioperfil button:hover{
-	background-color: #e3daff;
+	background-color: #ff8a9a;
 }
 
 
@@ -565,20 +564,20 @@ iframe{
 
 .radioperfil button{
 	font-size: 1.2rem;
-	border: 3px solid #8468d9;
+	border: 3px solid #f7334e;
 	background-color: initial;
 	border-radius: 20px;
 	margin-left: 10px;
 	margin-top: 9px;
 	padding: 12.5px 10px;
-	color: #8468d9;
+	color: #f7334e;
 	transition: 0.5s;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .radioperfil button:hover{
-	background-color: #e3daff;
+	background-color: #ff8a9a;
 }
 
 /*-----*/
@@ -658,44 +657,6 @@ footer a{
 	margin: 0 10px;
 	width: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
