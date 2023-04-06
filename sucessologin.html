@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharts - Login</title>
+    <link rel="shortcut icon" href="icons/logoresponsivaA.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+	border: 0;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+
+header{
+	display: grid;
+	background-color: #202020;
+	width: 100%;
+	height: 77px;
+	grid-template-columns: 5vw 15vw 15vw 30vw 15vw 15vw 5vw;
+}
+
+nav span{
+    display: table;
+    background-color: white;
+    padding: 1vw 5vw;
+    margin: 6px;
+    border-radius: 2px;
+    grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.menu-hamb{
+	margin-left: 4.3vw;
+	margin-top: 4.3vw;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	z-index: 2;
+}
+
+#LogoSharts{
+	margin-top: 7%;
+	grid-column-start: 4;
+	grid-column-end: 4;	
+}
+
+#IconePerfil{
+	transform: scale(95%);
+	margin-top: 3.2vw;
+	margin-left: 16px;
+	grid-column-start: 6;
+	grid-column-end: 6;
+}
+
+.menu input {
+    width: 11vw;
+    height: 11vw;
+    position: absolute;
+    top: 3.2vw;
+    left: 5.5vw;
+    cursor: pointer;
+    opacity: 0;
+    grid-column-start: 2;
+	grid-column-end: 2;
+	z-index: 4;
+}
+    .menu input:checked~ul {
+        transform: none;
+        z-index: 1;
+    }
+
+    .menu input:checked~.menu-hamb{
+    	position: absolute;
+    	margin-left: 4.3vw;
+		margin-top: 2.8vw;
+        z-index: 3;
+    }
+
+    .menu input:checked~.menu-hamb span{
+    	background-color: #202020;
+    }
+
+nav ul{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 198px;
+    height: 210px;
+    background-color: #f7334e;
+    border: none;
+    border-bottom-right-radius: 30px;
+    transform: translate(-110%, 0);
+    transition: transform 0.6s;
+    padding-top: 75px;
+    padding-bottom: -45px;
+    z-index: 1;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: white;
+    font-size: 1.1em;
+    border-radius: 20px;
+}
+
+.menu li {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 1.3rem;
+
+}
+
+/*--main(h1)--*/
+
+body{
+    animation-name: trslogin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trslogin{
+    0%{
+        background-color: rgb(90, 255, 184); 
+    }
+    50%{
+        background-color: rgb(3, 146, 87);
+    }
+    100%{
+        background-color: rgb(90, 255, 184);
+    }
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 40vw 0;
+}
+
+
+
+/*---Rodapé---*/
+
+footer{
+	background-color: #424242;
+	height: 550px;
+}
+
+.blocofooter{
+	width: 90vw;
+	margin: 0 auto;
+	padding-top: 1vw;
+}
+
+.ShartsGroup{
+	display: flex;
+}
+
+#LogoShartsFooter{
+	margin: 20px 0;
+	width: 20%;
+}
+
+footer h2{
+	color: white;
+	margin-left: 5px;
+	margin-top: 22px;
+}
+
+footer li{
+	list-style: none;
+	margin: 20px 0;
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+.redes-sociais-contato{
+	display: flex;
+	float: right;
+	margin-top: -67vw;
+}
+
+.redes-sociais-contato img{
+	display: flex;
+	float: right;
+	margin: 0 10px;
+	width: 30px;
+}
+
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+
+        <nav class="menu">
+            <input type="checkbox">
+            <div class="menu-hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="radio.html">Radio</a></li>
+                <li><a href="#contato-ancora">Contato</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="index.html" id="LogoSharts"><img src="icons/Logotipo-sharts.svg" alt="Logotipo Sharts"></a>
+
+        <a href="login.html" id="IconePerfil"><img src="icons/profile.svg"  alt="Ícone de Perfil do usuário"></a>
+    
+    </header>
+
+    <h1>Você fez login com Sucesso!</h1>
+
+
+    <footer>
+
+        <div class="blocofooter">
+
+        <div class="ShartsGroup">
+        <img src="icons/Logotipo-sharts.svg" id="LogoShartsFooter" alt="Logotipo Sharts">
+        <h2>Group</h2>
+        </div>
+
+        <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Sharts Music+</a></li>
+            <li><a href="#">Sharts para artistas</a></li>
+            <li><a href="#">Termos e condições</a></li>
+            <li>2022</li>
+        </ul>
+
+        <div class="redes-sociais-contato">
+
+            <span id="contato-ancora"></span>
+
+            <a href="#"><img src="icons/facebook.png" alt="Logo facebook"></a>
+            <a href="#"><img src="icons/instagram.png" alt="Logo instagram"></a>
+            <a href="#"><img src="icons/reddit.png" alt="Logo reddit"></a>
+
+        </div>
+
+    </div>
+
+    </footer>
+    
+</body>
+
+
+
+</html>

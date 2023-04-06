@@ -51,11 +51,12 @@
 
             <form>
 
-            	<input type="email" name="email" placeholder="E-mail">
+            	<input type="email" name="email" id="email" placeholder="E-mail">
 
-            	<input type="password" name="email" placeholder="Senha">
+            	<input type="password" name="email" id="senha" placeholder="Senha">
 
-            	<button type="submit">Entrar</button>
+                <button type="submit" onclick="logar(); return false">Entrar</button>
+                
 
             	<a href="#">Esqueceu a senha?</a>
 
@@ -115,6 +116,22 @@
 
         </footer>
 
-        <script src="js/script.js"></script>
+        <script>
+
+            function logar(){
+        
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+        
+            if((email == "filipe@gmail.com") || (email == "lucas@gmail.com") || (email == "nicolas@gmail.com") || (email == "giovani@gmail.com") || (email == "luna@gmail.com") || (email == "brenda@gmail.com") || (email == "raphaela@gmail.com")){
+                alert('Sucesso');
+                location.href="sucessologin.html";
+            }else{
+            alert('Usuário incorreto');
+            }
+            }
+        
+        </script>
+
     </body>
     </html>
