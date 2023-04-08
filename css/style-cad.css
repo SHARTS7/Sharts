@@ -7,108 +7,107 @@
 
 @media only screen and (max-width: 480px) {
 
-header{
-	display: grid;
-	background-color: #202020;
-	width: 100%;
-	height: 77px;
-	grid-template-columns: 5vw 15vw 15vw 30vw 15vw 15vw 5vw;
-}
-
-nav span{
-    display: table;
-    background-color: white;
-    padding: 1vw 5vw;
-    margin: 6px;
-    border-radius: 2px;
-    grid-column-start: 2;
-	grid-column-end: 2;
-}
-
-.menu-hamb{
-	margin-left: 4.3vw;
-	margin-top: 4.3vw;
-	grid-column-start: 2;
-	grid-column-end: 2;
-	z-index: 2;
-}
-
-#LogoSharts{
-	margin-top: 7%;
-	grid-column-start: 4;
-	grid-column-end: 4;	
-}
-
-#IconePerfil{
-	transform: scale(95%);
-	margin-top: 3.2vw;
-	margin-left: 16px;
-	grid-column-start: 6;
-	grid-column-end: 6;
-}
-
-.menu input {
-    width: 11vw;
-    height: 11vw;
-    position: absolute;
-    top: 3.2vw;
-    left: 5.5vw;
-    cursor: pointer;
-    opacity: 0;
-    grid-column-start: 2;
-	grid-column-end: 2;
-	z-index: 4;
-}
-    .menu input:checked~ul {
-        transform: none;
-        z-index: 1;
-    }
-
-    .menu input:checked~.menu-hamb{
-    	position: absolute;
-    	margin-left: 4.3vw;
-		margin-top: 2.8vw;
-        z-index: 3;
-    }
-
-    .menu input:checked~.menu-hamb span{
-    	background-color: #202020;
-    }
-
-
-nav ul{
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 198px;
-    height: 210px;
-    background-color: #f7334e;
-    border: none;
-    border-bottom-right-radius: 30px;
-    transform: translate(-110%, 0);
-    transition: transform 0.6s;
-    padding-top: 75px;
-    padding-bottom: -45px;
-    z-index: 1;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 30px;
-    background-color: white;
-    font-size: 1.1em;
-    border-radius: 20px;
-}
-
-.menu li {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 35px;
-    font-size: 1.3rem;
-
-}
+	header{
+		display: grid;
+		background-color: #202020;
+		width: 100%;
+		height: 100%;
+		grid-template-columns: 5vw 15vw 15vw 30vw 15vw 15vw 5vw;
+	}
+	
+	nav span{
+		display: table;
+		background-color: white;
+		padding: 1vw 5vw;
+		margin: 6px;
+		border-radius: 2px;
+		grid-column-start: 2;
+		grid-column-end: 2;
+	}
+	
+	.menu-hamb{
+		margin-left: 4.3vw;
+		margin-top: 4.3vw;
+		grid-column-start: 2;
+		grid-column-end: 2;
+		z-index: 2;
+	}
+	
+	#LogoSharts{
+		margin-top: 5%;
+		grid-column-start: 4;
+		grid-column-end: 4;	
+	}
+	
+	#IconePerfil{
+		transform: scale(95%);
+		margin-top: 3.2vw;
+		margin-left: 16px;
+		grid-column-start: 6;
+		grid-column-end: 6;
+	}
+	
+	.menu input {
+		width: 11vw;
+		height: 11vw;
+		position: absolute;
+		top: 3.2vw;
+		left: 5.5vw;
+		cursor: pointer;
+		opacity: 0;
+		grid-column-start: 2;
+		grid-column-end: 2;
+		z-index: 4;
+	}
+		.menu input:checked~ul {
+			transform: none;
+			z-index: 1;
+		}
+	
+		.menu input:checked~.menu-hamb{
+			position: absolute;
+			margin-left: 4.3vw;
+			margin-top: 2.8vw;
+			z-index: 3;
+		}
+	
+		.menu input:checked~.menu-hamb span{
+			background-color: #202020;
+		}
+	
+	nav ul{
+		display: block;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 198px;
+		height: 210px;
+		background-color: #f7334e;
+		border: none;
+		border-bottom-right-radius: 30px;
+		transform: translate(-110%, 0);
+		transition: transform 0.6s;
+		padding-top: 75px;
+		padding-bottom: -45px;
+		z-index: 1;
+	}
+	
+	.menu a {
+		text-decoration: none;
+		color: black;
+		padding: 10px 30px;
+		background-color: white;
+		font-size: 1.1em;
+		border-radius: 20px;
+	}
+	
+	.menu li {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 35px;
+		font-size: 1.3rem;
+	
+	}
 
 
 /*----------main----------*/
@@ -291,7 +290,7 @@ footer a{
 .redes-sociais-contato{
 	display: flex;
 	float: right;
-	margin-top: -67vw;
+	margin-top: -276px;
 }
 
 .redes-sociais-contato img{
