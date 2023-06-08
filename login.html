@@ -1,97 +1,112 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sharts - Login</title>
-        <link rel="shortcut icon" href="icons/logoresponsivaA.svg">
-        <link rel="stylesheet" href="css/style-login.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-            <nav class="menu">
-                <input type="checkbox">
-                <div class="menu-hamb">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharts - Login</title>
+    <link rel="shortcut icon" href="icons/logoresponsivaA.svg">
+    <link rel="stylesheet" href="css/style-login_mb.css">
+    <link rel="stylesheet" href="css/style_login_pc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="radio.html">Radio</a></li>
-                    <li><a href="#contato-ancora">Contato</a></li>
-                </ul>
+<body>
+    <header>
 
-            </nav>
+        <a href="index.html" id="LogoSharts"><img src="icons/Logotipo-sharts.svg" alt="Logotipo Sharts"></a>
 
-            <a href="index.html" id="LogoSharts"><img src="icons/Logotipo-sharts.svg" alt="Logotipo Sharts"></a>
+        <nav class="menu">
+            <input type="checkbox">
+            <div class="menu-hamb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-            <a href="login.html" id="IconePerfil"><img src="icons/profile.svg"  alt="Ícone de Perfil do usuário"></a>
-        
-        </header>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="radio.html">Radio</a></li>
+                <li><a href="#contato-ancora">Contato</a></li>
+            </ul>
 
-        <main>
+        </nav>
 
-            <img src="icons/Logotipo-sharts.svg" id="LogoSharts-page" alt="Logotipo Sharts">
-            <h1>Bem Vindo (a) ao Sharts</h1>
+        <a href="login.html" id="IconePerfil"><img src="icons/profile.svg" alt="Ícone de Perfil do usuário"></a>
 
-            <form>
+    </header>
 
-            	<input type="email" name="email" id="email" placeholder="E-mail">
+    <main>
 
-            	<input type="password" name="email" id="senha" placeholder="Senha">
+        <img src="icons/Logotipo-sharts.svg" id="LogoSharts-page" alt="Logotipo Sharts">
+        <h1>Bem Vindo (a) ao Sharts</h1>
+
+        <form>
+
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+            <input type="password" name="email" id="senha" placeholder="Senha" required>
+
+            <section id="esq_env">
 
                 <button type="submit" onclick="logar(); return false">Entrar</button>
-                
 
-            	<a href="#">Esqueceu a senha?</a>
+                <a href="#">Esqueceu a senha?</a>
 
-            </form>
+            </section>
+        </form>
+
+        <section class="login-alternativo">
 
             <p>ou</p>
 
-            <section class="login-alternativo">
-
             <div class="cont-facebook">
-            	<img src="icons/facebookcolored.png" id="facebook-login">
-            	<button>Continue com o Facebook</button>
+                <img src="icons/facebookcolored.png" id="facebook-login">
+                <button>Continue com o Facebook</button>
             </div>
 
             <div class="cont-google">
-            	<img src="icons/googlecolored.png" id="google-login">
-            	<button>Continue com o Google</button>
+                <img src="icons/googlecolored.png" id="google-login">
+                <button>Continue com o Google</button>
             </div>
 
             <div class="not-cadastro">
-                <img src="icons/profile.svg" id="google-login">
+                <img src="icons/profile.svg" id="not-cad">
                 <a href="cadastro.html"><button>Não possuo cadastro</button></a>
             </div>
 
-        	</section>
+        </section>
 
-        </main>
+    </main>
 
-        <footer>
+    <footer>
 
-            <div class="blocofooter">
+        <div class="blocofooter">
 
             <div class="ShartsGroup">
-            <img src="icons/Logotipo-sharts.svg" id="LogoShartsFooter" alt="Logotipo Sharts">
-            <h2>Group</h2>
+                <img src="icons/Logotipo-sharts.svg" id="LogoShartsFooter" alt="Logotipo Sharts">
+                <h2>Group</h2>
+
+                <div class="redes-sociais-contato">
+
+                    <span id="contato-ancora"></span>
+
+                    <a href="#"><img src="icons/facebook.png" alt="Logo facebook"></a>
+                    <a href="#"><img src="icons/instagram.png" alt="Logo instagram"></a>
+                    <a href="#"><img src="icons/reddit.png" alt="Logo reddit"></a>
+
+                </div>
             </div>
 
             <ul>
@@ -102,36 +117,27 @@
                 <li>2022</li>
             </ul>
 
-            <div class="redes-sociais-contato">
-
-                <span id="contato-ancora"></span>
-
-                <a href="#"><img src="icons/facebook.png" alt="Logo facebook"></a>
-                <a href="#"><img src="icons/instagram.png" alt="Logo instagram"></a>
-                <a href="#"><img src="icons/reddit.png" alt="Logo reddit"></a>
-
-            </div>
-
         </div>
 
-        </footer>
+    </footer>
 
-        <script>
+    <script>
 
-            function logar(){
-        
+        function logar() {
+
             var email = document.getElementById('email').value;
             var senha = document.getElementById('senha').value;
-        
-            if((email == "filipe@gmail.com") || (email == "lucas@gmail.com") || (email == "nicolas@gmail.com") || (email == "giovani@gmail.com") || (email == "luna@gmail.com") || (email == "brenda@gmail.com") || (email == "raphaela@gmail.com")){
-                alert('Sucesso');
-                location.href="sucessologin.html";
-            }else{
-            alert('Usuário incorreto');
-            }
-            }
-        
-        </script>
 
-    </body>
-    </html>
+            if ((email == "filipe@gmail.com") || (email == "lucas@gmail.com") || (email == "nicolas@gmail.com") || (email == "giovani@gmail.com") || (email == "luna@gmail.com") || (email == "brenda@gmail.com") || (email == "raphaela@gmail.com")) {
+                alert('Sucesso');
+                location.href = "sucessologin.html";
+            } else {
+                alert('Usuário incorreto');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
