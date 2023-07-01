@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharts</title>
+    <title>Sharts - Perfil</title>
     <link rel="shortcut icon" href="icons/logoresponsivaA.svg">
-    <link rel="stylesheet" href="css/style-home_mb.css">
+    <link rel="stylesheet" href="css/style-categorias_mb.css">
     <link rel="stylesheet" href="css/style_mb.css">
-    <link rel="stylesheet" href="css/style-home_pc.css">
+    <link rel="stylesheet" href="css/style-categorias_pc.css">
     <link rel="stylesheet" href="css/style_pc.css">
-    <link rel="stylesheet" href="css/style-home_tablett.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
@@ -26,6 +24,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    .banner{
+        background-color: #ff6f00;
+    }
+    
+    #ctg_user{
+        color: #ff6f00;
+    }
+
+    #seguir{
+        background: #ff6f00;
+    }
+</style>
 <body>
     <header>
 
@@ -47,6 +58,8 @@
 
         </nav>
 
+        <a href="login.html" id="IconePerfil"><img src="icons/profile.svg" alt="Ícone de Perfil do usuário"></a>
+
         <div class="perfil-login">
 
             <a href="login.html" id="entrar-btn">Entrar</a>
@@ -54,8 +67,6 @@
             <a href="login.html" id="IconePerfil"><img src="icons/profile.svg" alt="Ícone de Perfil do usuário"></a>
 
         </div>
-        
-    </header>
 
     <main>
 
@@ -66,131 +77,31 @@
             <img src="icons/filtro.png" id="filtro">
 
         </div>
+        
+        <section class="perfil_user">
 
-        <div class="slider">
-
-            <div class="slides">
-
-                <!-----SlideButtons----->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-----SlideButtons----->
-
-
-                <!-----ImagensSlides----->
-                <div class="slide first" id="slide1">
-                    <a href="#"><img src="imagens\Slide_2.png" alt="Imagem 1"></a>
-                </div>
-
-                <div class="slide" id="slide2">
-                    <a href="#"><img src="imagens\Slide_1.png" alt="Imagem 2"></a>
-                </div>
-
-                <div class="slide" id="slide3">
-                    <a href="#"><img src="imagens\Slide_3.png" alt="Imagem 3"></a>
-                </div>
-
-                <div class="slide" id="slide4">
-                    <a href="#"><img src="imagens\Slide_4.png" alt="Imagem 4"></a>
-                </div>
-                <!-----Imagens Slides----->
-
-                <!-----Auto Navegação----->
-                <div class="autonav">
-                    <div class="btn1"></div>
-                    <div class="btn2"></div>
-                    <div class="btn3"></div>
-                    <div class="btn4"></div>
-                </div>
-
+            <div class="banner">
+                
             </div>
+            <img src="imagens/sharts_teatro_perfil.png" id="icone_user" alt="Icone perfil usuário">
 
-            <!-----Navegação Manual----->
-            <div class="manual-nav">
-                <label for="radio1" class="MBtn"></label>
-                <label for="radio2" class="MBtn"></label>
-                <label for="radio3" class="MBtn"></label>
-                <label for="radio4" class="MBtn"></label>
+            <h2 id="name_user">Cinema</h2>
+            <span id="ctg_user">Sharts</span>
 
-            </div>
+            <button id="seguir" onclick="seguindo()">Seguir</button>
 
-        </div>
-
-        <h3 id="perfis-title">Principais perfis</h3>
-
-        <section class="rolagem-perfis">
-
-            <div class="perfis">
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil1.jpg"></a>
-                    <figcaption><a href="">Adriana</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil2.jpg"></a>
-                    <figcaption><a href="#">Arthur</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil3.png"></a>
-                    <figcaption><a href="#">VEVO</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil4.png"></a>
-                    <figcaption><a href="#">M+</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil5.jpg"></a>
-                    <figcaption><a href="#">Beatriz</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil6.jpg"></a>
-                    <figcaption><a href="#">Juliana</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil7.jpg"></a>
-                    <figcaption><a href="#">Fernanda</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil8.jpg"></a>
-                    <figcaption><a href="#">Heitor</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil9.jpg"></a>
-                    <figcaption><a href="#">Paulo e Rafaela</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil5.jpg"></a>
-                    <figcaption><a href="#">Andréia</a></figcaption>
-                </figure>
-
-                <figure>
-                    <a href="perfil.html"><img src="imagens/perfil1.jpg"></a>
-                    <figcaption><a href="#">Carla</a></figcaption>
-                </figure>
-
-            </div>
+            <p id="bio_user">Os princípais conteúdos dos artistas de cinema <br> do Sharts</p>
 
         </section>
 
-        <h1>Postagens</h1>
+        <h1>cinema</h1>
 
         <section class="posts">
 
             <section class="userpost" id="post1">
 
                 <a href="#"><img src="imagens/perfil2.jpg"></a>
-                <p class="titulopost">Arthur<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">Arthur<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -224,7 +135,7 @@
             <section class="userpost" id="post2">
 
                 <a href="#"><img src="imagens/perfil4.png"></a>
-                <p class="titulopost">M+<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">M+<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -259,7 +170,7 @@
             <section class="userpost" id="post3">
 
                 <a href="#"><img src="imagens/perfil3.png"></a>
-                <p class="titulopost">VEVO<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">VEVO<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -293,7 +204,7 @@
             <section class="userpost" id="post4">
 
                 <a href="#"><img src="imagens/perfil2.jpg"></a>
-                <p class="titulopost">Arthur<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">Arthur<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -328,7 +239,7 @@
             <section class="userpost" id="post5">
 
                 <a href="#"><img src="imagens/perfil4.png"></a>
-                <p class="titulopost">M+<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">M+<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -363,7 +274,7 @@
             <section class="userpost" id="post6">
 
                 <a href="#"><img src="imagens/perfil3.png"></a>
-                <p class="titulopost">VEVO<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">VEVO<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -397,7 +308,7 @@
             <section class="userpost" id="post7">
 
                 <a href="#"><img src="imagens/perfil2.jpg"></a>
-                <p class="titulopost">Arthur<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">Arthur<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -431,7 +342,7 @@
             <section class="userpost" id="post8">
 
                 <a href="#"><img src="imagens/perfil4.png"></a>
-                <p class="titulopost">M+<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">M+<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -466,7 +377,7 @@
             <section class="userpost" id="post9">
 
                 <a href="#"><img src="imagens/perfil3.png"></a>
-                <p class="titulopost">VEVO<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">VEVO<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -500,7 +411,7 @@
             <section class="userpost" id="post10">
 
                 <a href="#"><img src="imagens/perfil2.jpg"></a>
-                <p class="titulopost">Arthur<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">Arthur<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -535,7 +446,7 @@
             <section class="userpost" id="post11">
 
                 <a href="#"><img src="imagens/perfil4.png"></a>
-                <p class="titulopost">M+<span> > </span> <a href="#">Música</a></p>
+                <p class="titulopost">M+<span> > </span> <a href="#">Cinema</a></p>
 
                 <h4 id="tvideo">Titulo do video do Artista</h4>
 
@@ -567,164 +478,31 @@
 
             </section>
 
-            <section class="userpost" id="post12">
-
-                <a href="#"><img src="imagens/perfil3.png"></a>
-                <p class="titulopost">VEVO<span> > </span> <a href="#">Música</a></p>
-
-                <h4 id="tvideo">Titulo do video do Artista</h4>
-
-                <div class="bg-gray-video"></div>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9OtihrZ9220"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-
-                <input type="text" id="coment" placeholder="comentar" onclick='openComents()'>
-                <span id="submit-coment"></span>
-
-                <div class="post-functions">
-
-                    <div class="curtir">
-
-                        <input type="checkbox" id="ip-curtir">
-                        <img src="icons/IconLike.svg" id="like">
-                        <img src="icons/IconLikePreenchido.svg" id="likep">
-                    </div>
-
-                    <img src="icons/IconChat.svg" id="msg">
-
-                    <img src="icons/IconShare.svg" id="share">
-
-                </div>
-
-            </section>
+            
 
         </section>
 
-        <section id="coments-modal" class="coments-modal">
-            <div class="coments-section">
 
-                <div class="coment-section">
-                    
-                    <div class="perfil-coment">
-                    <img src="imagens/perfil6.jpg" id="perfil-coment-img" alt="perfil-coment-img">
-                    <span id="title-perfil-coment">Marisa</span>
-                </div>
+        <script>
 
-                    <div class="coment-content"><p>Gostei muito do vídeo!!! hefbewkhfbewgfb ewfbwegfhvweewf vewfwjhevf ghwevfghwevfwjefgwejvfjwvefgwe</p></div>
-                </div>
+            function seguindo(){
+                document.getElementById('seguir').innerHTML = "Seguindo"
 
-                <div class="coment-post"><p>Gostei muito do vídeo!!!</p></div>
-                <div class="coment-post"><p>Gostei muito do vídeo!!!</p></div>
-                <div class="coment-post"><p>Gostei muito do vídeo!!!</p></div>
-            </div>
-        </section>
+            }
+            
+        </script>
 
-        </section>
 
-        <div class="audio" id="audio-box-1">
 
-            <div class="audioperfil">
-                <img src="imagens/perfil6.jpg">
-                <p>Marisa<span> > Música</span></p>
-                <button>PRO</button>
-            </div>
 
-            <img src="imagens/TeatroAD.jpg">
-            <h2>Lovesong</h2>
-            <h4>Leo Utah</h2>
 
-                <audio src="Canon in D (Pachelbel) - Violin & Piano (128 kbps).mp3" controls></audio>
 
-        </div>
 
-        <div class="audio" id="audio-box-2">
 
-            <div class="audioperfil">
-                <img src="imagens/perfil2.jpg">
-                <p>Tiago<span> > Música<span></p>
-                <button>PRO</button>
-            </div>
 
-            <img src="imagens/7radio.jpg">
-            <h2>Lovesong</h2>
-            <h4>Leo Utah</h2>
 
-                <audio src="Canon in D (Pachelbel) - Violin & Piano (128 kbps).mp3" controls></audio>
 
-        </div>
 
-        <h3 id="categorias-title">Categorias que talvez goste</h3>
-
-        <section class="rolagem-categorias">
-
-            <div class="categorias">
-
-                <a href="shartscinema.html"><img src="imagens/CINEMA.png"></a>
-
-                <a href="shartsdanca.html"><img src="imagens/DANCA.png"></a>
-
-                <a href="shartsmusica.html"><img src="imagens/MUSICA.png"></a>
-
-                <a href="shartsteatro.html"><img src="imagens/TEATRO.png"></a>
-
-                <a href="shartsfotografia.html"><img src="imagens/FOTOGRAFIA.png"></a>
-
-                <a href="shartsartesvisuais.html"><img src="imagens/ARTES-VISUAIS.png"></a>
-
-            </div>
-
-        </section>
-
-        <div class="radioperfil">
-            <h3>Rádios dos artistas</h3>
-            <button>PRO</button>
-        </div>
-
-        <section class="radioarts">
-
-            <div class="a-radios">
-
-                <figure>
-                    <a href="#"><img src="imagens/1radio.jpg"></a>
-                    <figcaption>1° Radio</figcaption>
-                    <figure>
-
-                        <figure>
-                            <a href="#"><img src="imagens/2radio.jpg"></a>
-                            <figcaption>2° Radio</figcaption>
-                            <figure>
-
-                                <figure>
-                                    <a href="#"><img src="imagens/3radio.jpg"></a>
-                                    <figcaption>3° Radio</figcaption>
-                                    <figure>
-
-                                        <figure>
-                                            <a href="#"><img src="imagens/4radio.jpg"></a>
-                                            <figcaption>4° Radio</figcaption>
-                                            <figure>
-
-                                                <figure>
-                                                    <a href="#"><img src="imagens/5radio.jpg"></a>
-                                                    <figcaption>5° Radio</figcaption>
-                                                    <figure>
-
-                                                        <figure>
-                                                            <a href="#"><img src="imagens/6radio.jpg"></a>
-                                                            <figcaption>6° Radio</figcaption>
-                                                            <figure>
-
-                                                                <figure>
-                                                                    <a href="#"><img src="imagens/7radio.jpg"></a>
-                                                                    <figcaption>7° Radio</figcaption>
-                                                                    <figure>
-
-            </div>
-
-        </section>
 
     </main>
 
@@ -763,5 +541,4 @@
 
     <script src="js/script.js"></script>
 </body>
-
 </html>

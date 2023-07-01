@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharts - Cadastre-se</title>
+    <title>Sharts - Sobre nós</title>
     <link rel="shortcut icon" href="icons/logoresponsivaA.svg">
-    <link rel="stylesheet" href="css/style-cad_mb.css">
-    <link rel="stylesheet" href="css/style-home_mb.css">
-    <link rel="stylesheet" href="css/style-cad_pc.css">
+    <link rel="stylesheet" href="css/style-s-nos_mb.css">
+    <link rel="stylesheet" href="css/style_mb.css">
+    <link rel="stylesheet" href="css/style-s-nos_pc.css">
     <link rel="stylesheet" href="css/style_pc.css">
+    <link rel="stylesheet" href="css/style-s-nos_tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
@@ -20,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -56,49 +58,35 @@
     </header>
 
     <main>
+        
+        <section class="s_nos">
+            <img src="imagens/img-sbnos.png" id="img_sobrenos" alt="IMAGEM SOBRE NÓS">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </section>
 
-        <img src="icons/Logotipo-sharts.svg" id="LogoSharts-page" alt="Logotipo Sharts">
-        <h1>Bem Vindo (a) ao Sharts</h1>
+        <h3 id="categorias-title">Categorias que talvez goste</h3>
 
-        <form>
+        <section class="rolagem-categorias">
 
-            <input type="email" name="email" placeholder="E-mail *" required>
+            <div class="categorias">
 
-            <input type="email" name="email" placeholder="Confirme seu e-mail *" required>
+                <a href="#"><img src="imagens/CINEMA.png"></a>
 
-            <input type="password" name="senha" placeholder="Crie uma senha *" required>
+                <a href="#"><img src="imagens/DANCA.png"></a>
 
-            <input type="text" name="user" placeholder="Crie um nome de usuário @ *" required>
+                <a href="#"><img src="imagens/MUSICA.png"></a>
 
-            <label for="data-n">Data de Nascimento</label>
-            <input type="date" name="data-n" placeholder="dd/MM/aaaf3a" required>
+                <a href="#"><img src="imagens/TEATRO.png"></a>
 
-            <div class="termos-e-condicoes">
-                <input type="checkbox" name="termos-check" id="termos-check">
-                <p>Concordo com os <a href="#">Termos e Condições</a> do Sharts</p>
-            </div>
+                <a href="#"><img src="imagens/FOTOGRAFIA.png"></a>
 
-            <button type="submit">Entrar</button>
+                <a href="#"><img src="imagens/ARTES-VISUAIS.png"></a>
 
-        </form>
-
-        <p id="ou">ou</p>
-
-        <section class="login-alternativo">
-
-            <div class="cont-facebook">
-                <img src="icons/facebookcolored.png" id="facebook-login">
-                <button>Continue com o Facebook</button>
-            </div>
-
-            <div class="cont-google">
-                <img src="icons/googlecolored.png" id="google-login">
-                <button>Continue com o Google</button>
-            </div>
-
-            <div class="fzr-login">
-                <img src="icons/profile.svg" id="fzr-login">
-                <a href="login.html"><button>Fazer Login</button></a>
             </div>
 
         </section>
@@ -137,8 +125,8 @@
 
     </footer>
 
-    <script src="js/script.js"></script>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>

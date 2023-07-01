@@ -6,18 +6,19 @@
 	list-style-type: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 1201px) {
 
 /*----------main----------*/
 
+
 #LogoSharts-page{
 	display: block;
-	width: 30%;
-	margin: 80px auto 20px;
+	width: 7%;
+	margin: 50px auto 20px auto;
 }
 
 h1{
-	font-size: 1.4rem;
+	font-size: 1rem;
 	text-align: center;
 	font-weight: 600;
 	margin-bottom: 50px;
@@ -32,42 +33,53 @@ form{
 form input{
 	display: block;
 	background-color: #d8d7d7;
-	font-size: 1.2rem;
-	padding: 0 5vw;
-	margin: 15px 0;
-	border-radius: 10px;
-	width: 80vw;
-	height: 50px;
+	font-size: 1rem;
+	padding: 10px 20px;
+	margin: 15px auto 15px auto;
+	border-radius: 7px;
+	width: 20%;
 	outline: 0;
 }
 
 form input::placeholder{
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
-form button{
-	width: 90vw;
-	font-size: 1.1rem;
+#esq_env{
+	margin: 0 auto;
+	width: 20%;
+}
+
+#esq_env button{
+	position: relative;
+	float: right;
+	font-size: 1rem;
 	background-color: #f7334e;
 	border-radius: 10px;
-	padding: 10px 50px;
+	padding: 5px 30px;
+	left: 20px;
 	color: white;
+	transition: 0.2s;
 }
 
-form a{
+#esq_env button:hover{
+	background-color: #c52137;
+}
+
+#esq_env a{
+	position: relative;
 	float: left;
-	font-size: 1.1rem;
-	margin-top: 10px;
+	right: 20px;
+	font-size: 0.8rem;
 	color: #f7334e;
 }
 
 p{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	color: #363636;
-	margin-top: 90px;
+	margin-top: 65px;
 	text-align: center;
 }
-
 
 /*----------Login alternativo----------*/
 
@@ -77,21 +89,23 @@ p{
 }
 
 .login-alternativo button{
-	font-size: 1.1rem;
-	padding: 0 8vw 0 11vw;
-	margin: 15px 0;
+	font-size: 1rem;
+	padding: 10px 5px 10px 20px;
+	margin: 15px auto;
 	border: 2px solid black;
-	border-radius: 10px;	
-	width: 80vw;
-	height: 50px;
+	border-radius: 10px;
+    white-space: nowrap;
+	width: 20%;
 	outline: 0;
 }
 
 .not-cadastro button{
 	border: 0;
-	background: rgb(255,0,188);
 	background: linear-gradient(90deg, rgba(255,0,188,1) 0%, rgba(255,112,1,1) 100%);
 	color: white;
+}
+.not-cadastro button:hover{
+	background: linear-gradient(90deg, rgb(200, 1, 147) 0%, rgb(184, 80, 0)100%);
 }
 
 /*rgba(255,112,1,1)rgba(255,0,188,1)*/
@@ -101,10 +115,13 @@ p{
 }
 
 .login-alternativo img{
-	position: absolute;
-	margin: 28px 0 0 15px;
-	width: 25px;
-	height: 25px;
+    position: absolute;
+	margin: 28px 0 0 13px;
+	width: 20px;
+	height: 20px;
+}
+#not-cad{
+	margin-top: 26px;
 }
 
 }
